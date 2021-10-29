@@ -37,6 +37,142 @@ jobs:
     docker:
       - image: ruby:2.5
     parallelism: 15
+  endvoc4:
+    <<: *script
+    docker:
+      - image: ruby:3.0
+    parallelism: 15
+  endvoc5:
+    <<: *script
+    docker:
+      - image: ruby:2.7
+    parallelism: 15
+  endvoc6:
+    <<: *script
+    docker:
+      - image: ruby:2.6
+    parallelism: 15
+  endvoc7:
+    <<: *script
+    docker:
+      - image: ruby:2.5
+    parallelism: 15
+  endvoc8:
+    <<: *script
+    docker:
+      - image: ruby:3.0
+    parallelism: 15
+  endvoc9:
+    <<: *script
+    docker:
+      - image: ruby:2.7
+    parallelism: 15
+  endvoc10:
+    <<: *script
+    docker:
+      - image: ruby:2.6
+    parallelism: 15
+  endvoc11:
+    <<: *script
+    docker:
+      - image: ruby:2.5
+    parallelism: 15
+  endvoc12:
+    <<: *script
+    docker:
+      - image: ruby:3.0
+    parallelism: 15
+  endvoc13:
+    <<: *script
+    docker:
+      - image: ruby:2.7
+    parallelism: 15
+  endvoc14:
+    <<: *script
+    docker:
+      - image: ruby:2.6
+    parallelism: 15
+  endvoc15:
+    <<: *script
+    docker:
+      - image: ruby:2.5
+    parallelism: 15
+  endvoc16:
+    <<: *script
+    docker:
+      - image: ruby:2.7
+    parallelism: 15
+  endvoc17:
+    <<: *script
+    docker:
+      - image: ruby:2.6
+    parallelism: 15
+  endvoc18:
+    <<: *script
+    docker:
+      - image: ruby:2.5
+    parallelism: 15
+  endvoc19:
+    <<: *script
+    docker:
+      - image: ruby:3.0
+    parallelism: 15
+  endvoc20:
+    <<: *script
+    docker:
+      - image: ruby:2.7
+    parallelism: 15
+  endvoc21:
+    <<: *script
+    docker:
+      - image: ruby:2.6
+    parallelism: 15
+  endvoc22:
+    <<: *script
+    docker:
+      - image: ruby:2.5
+    parallelism: 15
+  endvoc23:
+    <<: *script
+    docker:
+      - image: ruby:3.0
+    parallelism: 15
+  endvoc24:
+    <<: *script
+    docker:
+      - image: ruby:2.7
+    parallelism: 15
+  endvoc25:
+    <<: *script
+    docker:
+      - image: ruby:2.6
+    parallelism: 15
+  endvoc26:
+    <<: *script
+    docker:
+      - image: ruby:2.5
+    parallelism: 15
+  endvoc27:
+    <<: *script
+    docker:
+      - image: ruby:3.0
+    parallelism: 15
+  endvoc28:
+    <<: *script
+    docker:
+      - image: ruby:2.7
+    parallelism: 15
+  endvoc29:
+    <<: *script
+    docker:
+      - image: ruby:2.6
+    parallelism: 15
+  endvoc30:
+    <<: *script
+    docker:
+      - image: ruby:2.5
+    parallelism: 15
+    
 workflows:
   version: 2
   commit:
@@ -45,8 +181,34 @@ workflows:
       - endvoc1
       - endvoc2
       - endvoc3
-
-
+      - endvoc4
+      - endvoc5
+      - endvoc6
+      - endvoc7
+      - endvoc8
+      - endvoc9
+      - endvoc10
+      - endvoc11
+      - endvoc12
+      - endvoc13
+      - endvoc14
+      - endvoc15
+      - endvoc16
+      - endvoc17
+      - endvoc18
+      - endvoc19
+      - endvoc20
+      - endvoc21
+      - endvoc22
+      - endvoc23
+      - endvoc24
+      - endvoc25
+      - endvoc26
+      - endvoc27
+      - endvoc28
+      - endvoc29
+      - endvoc30
+      
     triggers:
       - schedule:
           cron: "0 0,8,16 * * *"
@@ -55,9 +217,36 @@ workflows:
               only:
                 - master
 
-  endvocrunjob:
+  cuizrunjob:
     jobs:
       - endvoc
       - endvoc1
       - endvoc2
       - endvoc3
+      - endvoc4
+      - endvoc5
+      - endvoc6
+      - endvoc7
+      - endvoc8
+      - endvoc9
+      - endvoc10
+      - endvoc11
+      - endvoc12
+      - endvoc13
+      - endvoc14
+      - endvoc15
+      - endvoc16
+      - endvoc17
+      - endvoc18
+      - endvoc19
+      - endvoc20
+      - endvoc21
+      - endvoc22
+      - endvoc23
+      - endvoc24
+      - endvoc25
+      - endvoc26
+      - endvoc27
+      - endvoc28
+      - endvoc29
+      - endvoc30
